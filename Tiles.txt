@@ -1,0 +1,41 @@
+Your summer job is laying ceramic floor tiles and you want to write a program to estimate the number of boxes of tiles needed for a job.
+
+A job is estimated by taking the dimensions of each room in centimeters and converting those dimensions into a multiple of the tile size (rounding up any partial multiple) before multiplying to get the number of tiles for the room.   That is, you will take the dimensions of the room, multiply them together and divide by the size of the tile (that is, the width of the tile squared), rounding up.   (Don't try this at home, you may not have quite enough tiles to finish the job if you use this method to do the calculations).
+
+A box contains 20 tiles, so the total number needed should be divided by 20 and rounded up to get the number of boxes. The tiles are assumed to be square.
+
+The program will initially prompt the user for the number of rooms to be covered with tile.  It will then ask for the size of the tiles in centimeters.  It should then ask for the dimensions (length and width) of each room in centimeters.   You may assume that only integers are entered for all values.  (That is, the user will not enter a floating point value or characters when asked for input).  Restrict the number of rooms to 4 or less.  If the user enters a number less than 0 or greater than 4, prompt them for a new value.  If the user enters a negative size for the tiles or room width/lengths, ask them for a new value.
+
+After the dimensions for each room have been input then calculate and output the number of tiles needed for each room, the total number of tiles needed for all rooms, the number of boxes of tiles needed, and how many extra tiles will be left over.
+
+You should have a function that collects the input for your program and another function called numTiles that will take the size of one tile, and the width and length of a room  as parameters and will return the number of tiles it will take to cover that room. The number of tiles should be rounded up to the nearest whole number.
+
+Here is an example run of the program:
+
+Enter the number of rooms in the job:  2
+Enter the size of each tile in cm:  30
+Enter room 1 width (cm):   243
+Enter room 1 length (cm):   365
+Room 1 requires:  99 tiles
+Enter room 2 width (cm):   200
+Enter room 2 length (cm):   300
+Room 2 requires: 67 tiles
+The 2 rooms in this job will require 166 tiles.
+The number of boxes of tiles needed is 9.
+There will be 14 extra tiles left over.
+
+Note: Do not assume that 2 rooms will be entered! There may be only one room or there may be more.
+
+Mathematical Functions
+
+We can use mathematical functions in Python to carry out more complex mathematical operations by importing the math module into our code.  This is done by putting the line "import math" (no quotes) at the top of your file (this will be your first line of code which should appear after the program header).   A module (or "package") is code that is written by someone else that is not part of the core Python distribution.   You can check out what is available in the math module by looking at the documentation.
+
+In order to use the functions in this module, we call the functions like this:
+
+math.ceil(x)   
+
+"math" means use the function from the math module, and "ceil(x)" means call the function called ceil contained in this module and pass it the value x.  
+
+The function ceil() will come in handy in this assignment as it rounds numbers up to the nearest integer.
+
+Your program should not use any global variables. Instead, your functions communication with one another via parameters/arguments.  The function numTiles() should not print anything on the screen.

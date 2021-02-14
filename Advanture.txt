@@ -1,0 +1,28 @@
+Many years ago, we were easily amused by text-based computer games, the most notorious was called “Adventure”.  Adventure went something like this (computer output is in plain text, user input is in bold):
+
+You are in a forest.  You look around and see many tall trees.  To the right, you see a bridge.  To the left, a path leading deeper into the forest.  Which way would you like to go?  (Enter “L” or “R”)
+R
+
+
+You cross the bridge dodging many evil looking trolls who asked you for money.  On the far side of the bridge you come to a fork in the road.   You also see an odd looking bag hanging from the tree.  What would you like to do?  (Enter “L” to go left, “R” to go right, “O” to open the bag, “B” to go back across the bridge)
+O
+
+
+You open the bag and find 5 coins.  Do you wish to take the coins with you?  (“Y” for yes, “N” for no)
+Y
+
+
+You now must choose between the road ahead or going back the way you came.  (Enter “L” to go left, “R” to go right, “B” to go back across the bridge)
+R
+
+
+And on the story goes...
+
+
+Write your own adventure game.  There is no length restriction, but you must have at least 3 places where the user can end up.  Be creative and have fun with this.   You cannot assume that users will enter a correct value for a choice.  That is, if you ask them to input “L” or “R”, the user might enter a "P" or a "2".    You should continue to prompt them for proper input until they get it right.   Be sure that your program is user friendly – that is, the user should know exactly what they should input.  (For example, if I need to type “R” do not ask me to input “r”).  
+
+Your program should be structured using a function for each "place".   So, if you can go, say to the "Cottage", cottage() would be a function and would be called, for example, when a user chooses to go "L" at a certain spot.  From the cottage, perhaps they can go to the "Boathouse" and the "Restaurant".  Each of these will be functions.   Plan your program on paper before you start coding.  
+
+Add in some fun things for the user to do such as answer a math problem when they enter a couple of locations.  This functionality should be split into a separate function and called from the function.  For instance, cottage() may call doMath().
+
+The functions in this program will not have parameters or return values (unless you have a reason to use them -- which is fine). 
