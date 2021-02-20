@@ -1,0 +1,67 @@
+Credit Card List
+Complete the following skeleton code as indicated by the comments for each function..  You should remove my comments and put in your own function headers and inline comments.  You should also add an appropriate program header.
+
+   
+def totalAmounts(location):
+    #given the name of a location, return the total amount of the gift cards in the list for
+    #that location
+    #remove these comments and add your own when you hand in your assignment
+    pass
+
+
+def allTotals(giftCards):
+    #given a list of tuples of the form (location, amount), print out a list formatted like this:
+    #location  totalAmountofGiftCardsFromThatLocation
+    #this function must make use of the function called totalAmounts defined above
+    pass
+
+
+def increaseAmazonCards(giftCards):
+    #increase the amount of each amazon gift card by $50.
+    pass
+
+
+def addNewCards():
+    #write the function to add a new card (and amount) to the list of gift cards.
+    #this function will prompt the user for the card location and the amount and add
+    #it to the list.
+    pass
+
+
+def combineCards():
+    #write a function that will take the list of cards and combine the amounts for the
+    #cards from the same location.
+    #your function should not change the original list, but instead create a new list
+    #containing only unique locations and the total of the cards for that location.
+    #This new list should be returned.
+    #The format should be [[location, totalAmount], [location, totalAmount] ...]
+    pass
+
+
+def numberOfCards():
+    #this function should take as a parameter a location and it should return the number
+    #of cards in the list for that particular location.
+    #there should be NO USER INPUT in this function and no print() statements.
+    pass
+
+    
+
+def main():
+    #make your program user friendly by adding print statements telling the user what is happening
+    giftCardAmounts = [("amazon", 200), ("mastercard", 250), ("amazon", 300),
+                       ("esso", 250), ("mastercard", 300), ("semphora", 100),
+                       ("semphora", 200), ("amazon", 400), ("esso", 200)]
+    print("This program doesn't do anything yet.  Complete the program as per the comments ")
+
+    #call totalAmounts() with locations equal to "semphora" and "amazon"
+    #call allTotals()
+    #call increaseAmazonCards()
+    #call allTotals() again
+    #call addNewCards()
+    #call allTotals() again
+    #call combineCards()
+    #print the result
+    #ask the user for a location
+    #call numberOfCards() and print the result
+    
+main() 
